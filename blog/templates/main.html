@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+margin:0 auto;
+background-position:initial;
+background-size:contain;
+}
+.head1{
+font-size:40px;
+color:red;
+font-weight:bold;
+font-family:Verdana;
+}
+.head2{
+font-size:17px;
+margin-left:10px;
+margin-bottom:15px;
+font-family:Bookman Old Style;
+}
+.head2:hover{
+color:blue;
+}
+.menu{
+position:sticky;
+top: 0;
+background-color:lightgreen;
+padding:10px 0px 10px 0px;
+color:white;
+margin: 0 auto;
+overflow: hidden;
+
+}
+.menu a{
+ float:left;
+ color:white;
+ text-align:center;
+ padding:14px 16px;
+ text-decoration:none;
+ font-size:20px;
+}
+.menu-log{
+ float:right;
+}
+.body_sec{
+margin-left:20px;
+}
+
+footer{
+width:100%;
+bottom:0px;
+background:#000;
+color:#fff;
+padding-top:5px;
+padding-bottom:5px;
+font-size:20px;
+font-weight:bold;
+position:absolute;
+}
+
+
+.right {
+  background-color: lightblue;
+  float: right;
+  width: 30%;
+  padding: 10px 10px;
+ 
+  }
+ .body_sec{
+  float: left;
+  width: 60%;
+  padding: 2 20px;
+  overflow: hidden;
+
+  }
+#content
+p i:first-child{
+color:blue;
+}
+#content2
+p::first-letter{
+color:red;
+font-size:xx-large;
+}
+.s{
+float:left;
+overflow: hidden;
+ width: 100%;
+ padding: 2 20px;
+}
+.s
+p::first-line{
+color:gold;
+}
+ 
+ 
+</style>
+</head>
+<body>
+<header style="background-color:#f1f1f1;padding:15px;">
+<div class="head1">BLOOD DINATE<img src="corona.jpg" alt="corona" width="150" height="90" align="right"></div>
+<div class="head2">Be a donor and receiver</div>
+</header>
+<div class="menu">
+<a href="{% url 'blog:donor' %}">be a donor</A>
+<a href="{% url 'blog:list' %}">in need of blood?</A>
+<a href="">about us</A>
+<div class="menu-log">
+<a href="#">funds</A>
+</div>
+</div>
+<div class="body_sec">
+<section id="content">
+<h3>write some ccrap about blood donations?</h3>
+<p>blood is very punitham . so give blood take blood</p></section>
+<section id="content2">
+<p></p>
+</section>
+<div class="s">
+
+<h3>Coronavirus treatment</h3>
+<marquee style="color:red">There is currently no vaccine or treatment for COVID-19.</marquee>
+ <p></p>
+
+</div>
+</div>
+
+ <div class="right">
+    <h2>What?</h2>
+    <p>Coronaviruses are a group of related viruses that cause diseases in mammals and birds. ... The name coronavirus is derived from the Latin corona, meaning "crown" or "halo", which refers to the characteristic appearance reminiscent of a crown .</p>
+    <h2>Where?</h2>
+    <p>Many health experts believe that the new strain of coronavirus likely originated in bats or pangolins. The first transmission to humans was in Wuhan, China. Since then, the virus has mostly spread through person-to-person contact.</p>
+    <h2>Symptoms</h2>
+    <p>People may experience:
+	<ul>
+<li>cough</li>
+<li>fever</li>
+<li>tiredness</li>
+<li>difficulty breathing (severe cases)</li>
+</ul></p>
+  </div>
+<footer><pre>A webpage by ->							ur team name if any<pre></footer>
+</body>
+</html>

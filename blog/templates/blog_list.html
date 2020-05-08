@@ -1,0 +1,30 @@
+{%load static%}
+
+<html>
+<head>
+<link rel="stylesheet" href="{%static 'styles.css'%}">
+
+
+</head>
+<h1>donators available</h1>
+<div class="blogs">
+
+<!--
+{%for b in blog%}
+<p>{b['email']}----{{b.email}}</p>
+<p>{{b.snippet}}</p> 
+<p>{{b.date}}</p> 
+</div>
+{%endfor%}
+-->
+{% for t in blog %}
+    {% for i in t %}
+        {% for j in i %}
+            {{ j }} --
+         {% endfor %}
+<br>
+    {% endfor %}
+<br><hr>
+{% endfor %}
+</div>
+</html>
